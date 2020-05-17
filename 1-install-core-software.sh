@@ -12,7 +12,6 @@ sudo apt-get install -y ufw
 sudo ufw allow ssh
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo ufw enable -y
 
 #sudo bash openssh-privkey.sh
 #sudo bash openssh-password.sh

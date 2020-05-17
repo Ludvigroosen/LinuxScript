@@ -4,7 +4,8 @@ echo "################################################################"
 echo "####################   EXTRA  SOFTWARE   #######################"
 echo "################################################################" >&2
 
-sudo apt-get install neofetch -y
+sudo apt-get install -y neofetch
+sudo apt-get install -y open-vm-tools
 
 #Move Neofetch Files 
 sudo mv motd.sh /etc/update-motd.d/01-custom

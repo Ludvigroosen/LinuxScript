@@ -7,13 +7,11 @@ echo "################################################################"
 echo "####################    DOWNLOADING..    #######################"
 echo "################################################################" >&2
 
-mkdir Install
-cd Install/
-wget https://raw.githubusercontent.com/Ludvigroosen/Automated-Linux-Installer/master/1-install-core-software.sh
-wget https://raw.githubusercontent.com/Ludvigroosen/Automated-Linux-Installer/master/2-install-extra-software.sh
-wget https://raw.githubusercontent.com/Ludvigroosen/Automated-Linux-Installer/master/misc/motd.sh
-wget https://raw.githubusercontent.com/Ludvigroosen/Automated-Linux-Installer/master/misc/ssh-config-password
-wget https://raw.githubusercontent.com/Ludvigroosen/Automated-Linux-Installer/master/misc/ssh-config
+wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/1-install-core-software.sh
+wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/2-install-extra-software.sh
+wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/misc/motd.sh
+wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/misc/ssh-password.sh
+wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/misc/ssh-privkey.sh
 
 #Test to see if user is running with root privileges.
 if [[ "${UID}" -ne 0 ]]

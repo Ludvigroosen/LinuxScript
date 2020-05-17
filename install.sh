@@ -9,9 +9,9 @@ echo "################################################################" >&2
 
 wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/1-install-core-software.sh
 wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/2-install-extra-software.sh
-wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/misc/motd.sh
-wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/misc/ssh-password.sh
-wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/misc/ssh-privkey.sh
+wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/motd.sh
+wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/ssh-password.sh
+wget https://raw.githubusercontent.com/Ludvigroosen/LinuxScript/master/ssh-privkey.sh
 
 #Test to see if user is running with root privileges.
 if [[ "${UID}" -ne 0 ]]

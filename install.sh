@@ -1,6 +1,6 @@
 #!bin/bash
 
-#This script is made to make sure that everything is prepared
+#This script is made to make sure that setup at start. This is just the master script.
 #Run at you're own risk. 
 
 echo "################################################################"
@@ -38,8 +38,23 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get autoremove -y
 sudo apt clean -y
+sudo apt-get --purge autoremove -y
 
 sudo ufw enable
+
+
+echo "################################################################"
+echo "####################    Verification     #######################"
+echo "################################################################"
+
+#if [ $? -eq 0 ]
+#then
+  #echo "The script ran ok"
+  #exit 0
+#else
+  #echo "The script failed" >&2
+  #exit 1
+#fi
 
 echo "################################################################"
 echo "####################    T H E   E N D    #######################"

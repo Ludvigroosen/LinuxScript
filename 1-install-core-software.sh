@@ -13,5 +13,12 @@ sudo ufw allow ssh
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
+
+
 #sudo bash openssh-privkey.sh
 #sudo bash openssh-password.sh
+
+
+
+echo $? 
+exit 0 

@@ -1,0 +1,14 @@
+
+
+
+---
+Break commands in sub files 
+Add verification 
+---
+
+---
+Setup a proper misc file with keyboard, NTP, timezone
+---
+
+
+openssh else if command setup
